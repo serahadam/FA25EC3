@@ -122,7 +122,7 @@ int main() {
         for (string childID : rawNodes[i].children) {
 
            for (int j=0; j< rawNodes.size(); j++) {
-              if (rawNodes [j].id == childId) {
+              if (rawNodes [j].id == childID) {
                  adventureTree.addNode(
                     rawNodes[i].id,
                     rawNodes[j].id,
