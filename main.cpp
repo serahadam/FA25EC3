@@ -115,12 +115,24 @@ int main() {
     Tree<string> adventureTree;
 
     // TODO: Students, create the root from rawNodes[0]
-    // adventureTree.createRoot(rawNodes[0].id, rawNodes[0].text);
+     adventureTree.createRoot(rawNodes[0].id, rawNodes[0].text);
 
     // TODO: Students, add all remaining nodes
-    // for (int i = 1; i < rawNodes.size(); i++) {
-    //     adventureTree.addNode(...);
-    // }
+     for (int i = 0; i < rawNodes.size(); i++) {
+        for (string childID : rawNodes[i].children) {
+
+           for (int j=0; j< rawNodes.size(); j++) {
+              if (rawNodes [j].id == childId) {
+                 adventureTree.addNode(
+                    rawNodes[i].id,
+                    rawNodes[j].id,
+                    rawNodes[j].text
+                    );
+              }
+           }
+        }
+     }
+  
 
     // TODO: Students, implement a method in Tree<T> called playGame()
     // This method should:
@@ -136,8 +148,11 @@ int main() {
 
     cout << "Story loaded into your dynamic tree structure." << endl;
     cout << "Implement the Tree class to enable traversal and printing." << endl;
+    cout << "\n ===== Story Tree =====\n";
+    cout << "=======================\n";
 
     // TODO: Once implemented, uncomment to allow full gameplay.
     // adventureTree.playGame();
+   adventureTree.playGame();
     return 0;
 }
