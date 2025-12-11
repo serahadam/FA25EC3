@@ -26,28 +26,30 @@ Part 1 )
     Issues : 
       - findNode() wasn’t returning the correct node.
       - addNode() originally created duplicate roots by mistake.
-    
-    How I attempted to fix Issue : 
+     
+   How I attempted to fix Issue : 
       - Added print statements to track the search.
       - Fixed logic so only non-null parent gets children added.
 
+   Part 4 ) 
     What I worked on : 
       - Added destructor to free memory.
       - Verified that no memory leaks occur using dynamic deletion.
    
-    Issues : 
+  Issues : 
       - Some child nodes were deleted twice.
 
-    How I attempted to Fix Issues: 
+   How I attempted to Fix Issues: 
       - Ensured each node is deleted only once by using a post-order cleanup.
 
+  Part 5 ) Final Part 
     What I worked on : 
       - Cleaned comments, final testing, and touched up main.cpp.
 
-    Issues : 
+  Issues : 
       - None at this stage. 
     
-    Files Modified : 
+  Files Modified : 
     - Tree.h 
     - Main.cpp
   
