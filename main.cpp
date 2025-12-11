@@ -152,7 +152,7 @@ int main() {
     cout << "=======================\n";
 
     // TODO: Once implemented, uncomment to allow full gameplay.
-    // adventureTree.playGame();
    adventureTree.playGame();
+   
     return 0;
 }
